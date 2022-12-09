@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- <div id="modal">
+        <img src="./img/close.png" id="close-btn">
+        <div id="guidline">
+            <div style="text-align: center;">
+                <img src="./img/Guide-tag.png" style="height: 10vw;">
+            </div>
+            <ul>
+                <li>Top 10 Dancers, 10 Singers and 6 Fashion models (costume wear) must register their IDs with SK personnel to participate in this event.</li>
+                <li>Talents from the same category will compete in the PK Dancing, Singing and Fashion Costume Battle.</li>
+                <li>Talents must wear Red color outfits for the event</li>
+                <li>Talents need to be live 15 min before the PK Battle, there'll be a 15-min official PK match scheduled.</li>
+                <li>First Talent to the left on the webpage schedule, will start the performance first and will perform for first 5 – 6 Min, then next talent will perform for 5 – 6 Min.</li>
+                <li>Talents with maximum beans received from ROUND 1 will proceed to ROUND 2 in each category.</li>
+                <li>Will have 1 winner from each category (Dancing, Singing & Fashion) based on maximum beans received in the event will bementioned in the BANNER for 3 days.</li>
+                <li>Talents and Users will be ranked on the leaderboard based on the beans received and spent respectively in each round</li>
+                <li>Talent ranking will be separate for each category.</li>
+            </ul>
+        </div>
+    </div> -->
+    <div id="main">
+        <img src="./img/Guide Button.png" id="guid-btn">
+
+        <!----------- header img ------------->
+        <img src='./img/Christmas Mania Header Design.png' style="width: 100vw;">
+
+        <div style="padding: 0 3vw;">
+
+            <!---------- action banner ---------->
+            <br />
+            <div class="action">
+                <img onclick="setUserMode('reward')" src="./img/User Button UnSelect.png" class="user-talent-btn"
+                    id="reward-user">
+                <img onclick="setTalentMode('reward')" src="./img/Talent Button Select.png" class="user-talent-btn"
+                    id="reward-talent">
+                <img onclick="setRound1('reward')" src="./img/Round 1 Select.png" class="round1-round2-btn"
+                    id="reward-round1-btn">
+                <img onclick="setRound2('reward')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
+                    id="reward-round2-btn">
+            </div>
+            <br /><br />
+
+            <!----------- reward banner ------------>
+            <div class="banner">
+                <img src="./img/Rewards Name Bg.png" class="banner-title">
+                <div id="rewards">
+                    <img src="./img/Glass Show rewards copy.png">
+                    <img src="./img/Profile Frame.png">
+                </div>
+                <div class="description"> 10 Days Audio Room <br />theme + Profile Frame</div>
+            </div>
+            <br />
+
+            <!---------- action banner ---------->
+            <div class="action">
+                <img onclick="setRound1('schedule')" src="./img/Round 1 Select.png" class="round1-round2-btn"
+                    id="schedule-round1-btn">
+                <img onclick="setRound2('schedule')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
+                    id="schedule-round2-btn">
+            </div>
+
+            <!-------- category strip -------->
+            <div id="category-strip">
+                <img src="./img/Dance Button.png" onclick="selectCategory('dance')" id="dance">
+                <img src="./img/Singer Unselect Button.png" onclick="selectCategory('singer')" id="singer">
+                <img src="./img/Fashion Unselect Button.png" onclick="selectCategory('fashion')" id="fashion">
+            </div>
+            <br /><br />
+
+            <!------- schedule banner ------->
+            <div class="banner" id="schdeule-banner">
+                <img src="./img/Schedule Name Bg.png" class="banner-title">
+                <div id="schedule-table">
+                    <div id="table-heading">
+                        <div>Date</div>
+                        <div>Talent</div>
+                        <img src="./img/VS Unit.png">
+                        <div>Talent</div>
+                        <div>Date</div>
+                    </div>
+                    <div>
+                        <div id="table-data">
+                            <div>Date</div>
+                            <div>Name<br />Id:00000000</div>
+                            <img src="./img/VS Unit.png">
+                            <div>Name<br />Id:00000000</div>
+                            <div>Time</div>
+                        </div>
+                        <div id="table-data">
+                            <div>Date</div>
+                            <div>Name<br />Id:00000000</div>
+                            <img src="./img/VS Unit.png">
+                            <div>Name<br />Id:00000000</div>
+                            <div>Time</div>
+                        </div>
+                        <div id="table-data">
+                            <div>Date</div>
+                            <div>Name<br />Id:00000000</div>
+                            <img src="./img/VS Unit.png">
+                            <div>Name<br />Id:00000000</div>
+                            <div>Time</div>
+                        </div>
+                        <div id="table-data">
+                            <div>Date</div>
+                            <div>Name<br />Id:00000000</div>
+                            <img src="./img/VS Unit.png">
+                            <div>Name<br />Id:00000000</div>
+                            <div>Time</div>
+                        </div>
+                        <div id="table-data">
+                            <div>Date</div>
+                            <div>Name<br />Id:00000000</div>
+                            <img src="./img/VS Unit.png">
+                            <div>Name<br />Id:00000000</div>
+                            <div>Time</div>
+                        </div>
+                        <div id="table-data">
+                            <div>Date</div>
+                            <div>Name<br />Id:00000000</div>
+                            <img src="./img/VS Unit.png">
+                            <div>Name<br />Id:00000000</div>
+                            <div>Time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+
+            <!---------- action banner ---------->
+            <div class="action">
+                <img onclick="setUserMode('leaderboard')" src="./img/User Button UnSelect.png" class="user-talent-btn"
+                    id="leaderboard-user">
+                <img onclick="setTalentMode('leaderboard')" src="./img/Talent Button Select.png" class="user-talent-btn"
+                    id="leaderboard-talent">
+                <img onclick="setRound1('leaderboard')" src="./img/Round 1 Select.png" class="round1-round2-btn"
+                    id="leaderboard-round1-btn">
+                <img onclick="setRound2('leaderboard')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
+                    id="leaderboard-round2-btn">
+            </div>
+            <br /><br />
+
+            <!------ leaderboard banner -------->
+            <div class="banner" id="leaderboard-banner">
+                <img src="./img/Leaderboard Button.png" class="banner-title">
+                <div class="winner-list-top3" style="margin-top: -9vw;">
+                    <div id="profile-img-bg">
+                        <img src="./img/Bronze Profile .png" id="profile-img">
+                    </div>
+                    <div>
+                        Name <br />Id:00000000
+                    </div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                        <img src="./img/Snow flakes.png" id="flower">
+                    </div>
+                </div>
+                <div class="winner-list-top3">
+                    <div id="profile-img-bg">
+                        <img src="./img/Bronze Profile .png" id="profile-img">
+                    </div>
+                    <div>
+                        Name <br />Id:00000000
+                    </div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                        <img src="./img/Snow flakes.png" id="flower">
+                    </div>
+                </div>
+                <div class="winner-list-top3">
+                    <div id="profile-img-bg">
+                        <img src="./img/Bronze Profile .png" id="profile-img">
+                    </div>
+                    <div>
+                        Name <br />Id:00000000
+                    </div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                        <img src="./img/Snow flakes.png" id="flower">
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+                <div class="winner-list">
+                    <img src="./img/4 .png" class="number-img">
+                    <div class="empty-profile"></div>
+                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div id="last-col">
+                        <img src="./img/Beans .png" id="beans">
+                        000,000,00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">ALL RIGHTS RESERVED BY STREAMKAR </div>
+    </div>
+</body>
+
+</html>
