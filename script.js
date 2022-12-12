@@ -13,6 +13,25 @@ let slideNumber = 0;
 document.getElementById('user-rewards').style.display = 'none';
 const dot = document.getElementsByClassName('dot');
 const lastdot = document.getElementById('last-dot');
+const guidBtn = document.getElementById('guid-btn');
+const closeBtn = document.getElementById('close-btn');
+var main = document.getElementById('main');
+var modal = document.getElementById("modal");
+
+
+// show guidline on btn click
+guidBtn.onclick = function () {
+    modal.style.display = "block";
+    main.style.opacity = 0.2;
+    document.getElementById('body').classList.add('body');
+}
+
+// close guidline on close btn click
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+    main.style.opacity = 1;
+    document.getElementById('body').classList.remove('body');
+}
 
 const rewardsTalentRound1 = {
     0: `10 Days Audio Room \ntheme + Profile Frame`,
