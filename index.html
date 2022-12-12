@@ -53,13 +53,28 @@
             <br /><br />
 
             <!----------- reward banner ------------>
-            <div class="banner">
+            <div class="banner" id="reward-banner">
                 <img src="./img/Rewards Name Bg.png" class="banner-title">
                 <div id="rewards">
                     <img src="./img/Glass Show rewards copy.png">
                     <img src="./img/Profile Frame.png">
                 </div>
-                <div class="description"> 10 Days Audio Room <br />theme + Profile Frame</div>
+                <div id="user-rewards">
+                    <img src="./img/Beans 1 Users-min.png" id="user-rewards-img">
+                </div>
+                <br />
+                <div class="carousel">
+                    <img src="./img/left.png" class="left-right-arrow" onclick="onLeftShift()">
+                    <div id="carousel-dot">
+                        <img src="./img/Leaderboard rect-min.png" class="dot active">
+                        <img src="./img/Leaderboard rect-min.png" class="dot">
+                        <img src="./img/Leaderboard rect-min.png" class="dot">
+                        <img src="./img/Leaderboard rect-min.png" class="dot" id="last-dot">
+                    </div>
+                    <img src="./img/right.png" class="left-right-arrow" onclick="onRightShift()">
+                </div>
+                <br />
+                <div class="description" id="reward-des"> 10 Days Audio Room <br />theme + Profile Frame</div>
             </div>
             <br />
 
