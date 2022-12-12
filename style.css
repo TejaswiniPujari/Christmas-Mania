@@ -58,8 +58,55 @@ body {
     margin-top: -10vw;
 }
 
+#reward-banner{
+    height: 100vw;
+}
+
 #rewards img {
     height: 45vw;
+}
+
+#user-rewards{
+    margin-top: -5vw;
+}
+
+#user-rewards img{
+    height: 35vw;
+}
+
+.talent-tab{
+    display: none;
+}
+
+.left-right-arrow{
+    height: 8vw;
+}
+
+.carousel{
+    display: grid;
+    grid-template-columns: 10% 70% 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#carousel-dot{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    height: 2vw;
+    width: 3vw;
+    padding: 1vw;
+    border-radius: 10vw;
+}
+
+.active{
+    width: 10vw;
 }
 
 /* category */
