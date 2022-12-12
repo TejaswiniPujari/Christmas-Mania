@@ -7,11 +7,66 @@ body {
     padding: 0;
 }
 
+.body {
+    overflow: hidden;
+}
+
 #guid-btn {
     position: absolute;
     top: 75vw;
     height: 10vw;
     right: 0;
+}
+
+
+/*------- modal -----------*/
+#modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+#show-modal {
+    display: none;
+}
+
+#close-btn {
+    position: relative;
+    left: 85vw;
+    margin-top: 5vw;
+}
+
+#close-btn img {
+    height: 10vw;
+}
+
+#guidline {
+    background-image: url('./img/guidline-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 80vh;
+    display: grid;
+    margin: 2vh;
+    align-content: center;
+    padding: 1vw;
+}
+
+#guid-tag img {
+    height: 8vw;
+}
+
+#guidline ul {
+    transform: scale(0.8);
+    font-size: 6vw;
+    overflow: scroll;
+    height: 70vh;
+    text-align: start;
+    position: relative;
+    top: -5vw;
+    margin: 0;
 }
 
 /* all action tab */
@@ -58,7 +113,7 @@ body {
     margin-top: -10vw;
 }
 
-#reward-banner{
+#reward-banner {
     height: 100vw;
 }
 
@@ -66,23 +121,23 @@ body {
     height: 45vw;
 }
 
-#user-rewards{
+#user-rewards {
     margin-top: -5vw;
 }
 
-#user-rewards img{
+#user-rewards img {
     height: 35vw;
 }
 
-.talent-tab{
+.talent-tab {
     display: none;
 }
 
-.left-right-arrow{
+.left-right-arrow {
     height: 8vw;
 }
 
-.carousel{
+.carousel {
     display: grid;
     grid-template-columns: 10% 70% 10%;
     justify-content: center;
@@ -91,21 +146,21 @@ body {
     justify-items: center;
 }
 
-#carousel-dot{
+#carousel-dot {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     align-items: center;
 }
 
-.dot{
+.dot {
     height: 2vw;
     width: 3vw;
     padding: 1vw;
     border-radius: 10vw;
 }
 
-.active{
+.active {
     width: 10vw;
 }
 
