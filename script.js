@@ -64,16 +64,17 @@ function setUserMode(bannerName) {
         document.getElementById(`${bannerName}-user`).src = "./img/User Button Select.png";
         document.getElementById(`${bannerName}-talent`).src = "./img/Talent Button UnSelect.png";
         mode[bannerName] = 'user';
-        if (bannerName === 'reward') {
-            document.getElementById('reward-round1-btn').classList.add('talent-tab');
-            document.getElementById('reward-round2-btn').classList.add('talent-tab');
+        if (!(bannerName === 'leaderboard')) {
+            document.getElementById('reward-round1-btn').classList.add('remove-talent-tab');
+            document.getElementById('reward-round2-btn').classList.add('remove-talent-tab');
+            document.getElementById('remove-scheule-banner').classList.add('remove-talent-tab');
         }
         document.getElementById('user-rewards').style.display = 'block';
         document.getElementById('rewards').style.display = 'none';
         dot[slideNumber].classList.remove('active');
         dot[0].classList.add('active');
         document.getElementById('reward-des').innerHTML = rewardsUser[0];
-        document.getElementById('reward-banner').style.height = '100vw';
+        document.getElementById('reward-banner').style.height = '90vw';
         slideNumber = 0;
         lastdot.remove();
     }
@@ -84,9 +85,10 @@ function setTalentMode(bannerName) {
         document.getElementById(`${bannerName}-user`).src = './img/User Button UnSelect.png';
         document.getElementById(`${bannerName}-talent`).src = './img/Talent Button Select.png';
         mode[bannerName] = 'talent';
-        if (bannerName === 'reward') {
-            document.getElementById('reward-round1-btn').classList.remove('talent-tab');
-            document.getElementById('reward-round2-btn').classList.remove('talent-tab');
+        if (!(bannerName === 'leaderboard')) {
+            document.getElementById('reward-round1-btn').classList.remove('remove-talent-tab');
+            document.getElementById('reward-round2-btn').classList.remove('remove-talent-tab');
+            document.getElementById('remove-scheule-banner').classList.remove('remove-talent-tab');
         }
         document.getElementById('user-rewards').style.display = 'none';
         document.getElementById('rewards').style.display = 'block';
@@ -103,11 +105,13 @@ function setRound1(bannerName) {
         document.getElementById(`${bannerName}-round1-btn`).src = "./img/Round 1 Select.png";
         document.getElementById(`${bannerName}-round2-btn`).src = "./img/Round 2 UnSelect.png";
         roundNumber[bannerName] = 1;
-        dot[slideNumber].classList.remove('active');
-        dot[0].classList.add('active');
-        document.getElementById('reward-des').innerHTML = rewardsTalentRound1[0];
-        document.getElementById('reward-banner').style.height = '100vw';
-        slideNumber = 0;
+        if (bannerName === 'reward') {
+            dot[slideNumber].classList.remove('active');
+            dot[0].classList.add('active');
+            document.getElementById('reward-des').innerHTML = rewardsTalentRound1[0];
+            document.getElementById('reward-banner').style.height = '90vw';
+            slideNumber = 0;
+        }
     }
 }
 
@@ -116,11 +120,13 @@ function setRound2(bannerName) {
         document.getElementById(`${bannerName}-round1-btn`).src = "./img/Round 1 UnSelect.png"
         document.getElementById(`${bannerName}-round2-btn`).src = "./img/Round 2 Select.png";
         roundNumber[bannerName] = 2;
-        dot[slideNumber].classList.remove('active');
-        dot[0].classList.add('active');
-        document.getElementById('reward-des').innerHTML = rewardsTalentRound2[0];
-        document.getElementById('reward-banner').style.height = '120vw';
-        slideNumber = 0;
+        if (bannerName === 'reward') {
+            dot[slideNumber].classList.remove('active');
+            dot[0].classList.add('active');
+            document.getElementById('reward-des').innerHTML = rewardsTalentRound2[0];
+            document.getElementById('reward-banner').style.height = '100vw';
+            slideNumber = 0;
+        }
     }
 }
 
@@ -129,16 +135,25 @@ function selectCategory(category) {
         document.getElementById('dance').src = './img/Dance Button.png';
         document.getElementById('singer').src = './img/Singer Unselect Button.png';
         document.getElementById('fashion').src = './img/Fashion Unselect Button.png';
+        document.getElementById('dancers').style.display = 'block';
+        document.getElementById('singers').style.display = 'none';
+        document.getElementById('fashions').style.display = 'none';
     }
     else if (category === 'singer') {
         document.getElementById('dance').src = './img/Dance Unselect Button.png';
         document.getElementById('singer').src = './img/Category Singer Buttons.png';
         document.getElementById('fashion').src = './img/Fashion Unselect Button.png';
+        document.getElementById('dancers').style.display = 'none';
+        document.getElementById('singers').style.display = 'block';
+        document.getElementById('fashions').style.display = 'none';
     }
     else {
         document.getElementById('dance').src = './img/Dance Unselect Button.png';
         document.getElementById('singer').src = './img/Singer Unselect Button.png';
         document.getElementById('fashion').src = './img/Category Fashion Button .png';
+        document.getElementById('dancers').style.display = 'none';
+        document.getElementById('singers').style.display = 'none';
+        document.getElementById('fashions').style.display = 'block';
     }
 }
 
@@ -153,9 +168,9 @@ function onLeftShift() {
             if (roundNumber['reward'] == 2) {
                 document.getElementById('reward-des').innerHTML = rewardsTalentRound2[slideNumber];
                 if (slideNumber == 0 || slideNumber == 1)
-                    document.getElementById('reward-banner').style.height = '120vw';
-                else
                     document.getElementById('reward-banner').style.height = '100vw';
+                else
+                    document.getElementById('reward-banner').style.height = '90vw';
             }
         }
         else {
@@ -176,9 +191,9 @@ function onRightShift() {
             if (roundNumber['reward'] == 2) {
                 document.getElementById('reward-des').innerHTML = rewardsTalentRound2[slideNumber];
                 if (slideNumber == 0 || slideNumber == 1)
-                    document.getElementById('reward-banner').style.height = '120vw';
-                else
                     document.getElementById('reward-banner').style.height = '100vw';
+                else
+                    document.getElementById('reward-banner').style.height = '90vw';
             }
         }
         else {
