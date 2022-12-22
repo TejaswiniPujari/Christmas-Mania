@@ -11,6 +11,14 @@ body {
     overflow: hidden;
 }
 
+.ten-unit-gap {
+    height: 10vw;
+}
+
+.two-unit-gap {
+    height: 2vw;
+}
+
 #guid-btn {
     position: absolute;
     top: 75vw;
@@ -95,8 +103,10 @@ body {
 }
 
 .description {
-    font-size: 8vw;
+    font-size: 6vw;
     color: white;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .banner-title {
@@ -114,7 +124,7 @@ body {
 }
 
 #reward-banner {
-    height: 100vw;
+    height: 90vw;
 }
 
 #rewards img {
@@ -129,7 +139,7 @@ body {
     height: 35vw;
 }
 
-.talent-tab {
+.remove-talent-tab {
     display: none;
 }
 
@@ -175,6 +185,15 @@ body {
 }
 
 /* schedule banner table */
+
+
+#singers {
+    display: none;
+}
+
+#fashions {
+    display: none;
+}
 
 #schdeule-banner {
     height: 88vw;
