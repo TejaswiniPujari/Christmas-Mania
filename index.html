@@ -52,7 +52,7 @@
         <div style="padding: 0 3vw;">
 
             <!---------- action banner ---------->
-            <br />
+            <div class="two-unit-gap"></div>
             <div class="action">
                 <img onclick="setUserMode('reward')" src="./img/User Button UnSelect.png" class="user-talent-btn"
                     id="reward-user">
@@ -63,8 +63,7 @@
                 <img onclick="setRound2('reward')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
                     id="reward-round2-btn">
             </div>
-            <br /><br />
-
+            <div class="ten-unit-gap"></div>
             <!----------- reward banner ------------>
             <div class="banner" id="reward-banner">
                 <img src="./img/Rewards Name Bg.png" class="banner-title">
@@ -75,7 +74,7 @@
                 <div id="user-rewards">
                     <img src="./img/Beans 1 Users-min.png" id="user-rewards-img">
                 </div>
-                <br />
+                <div class="two-unit-gap"></div>
                 <div class="carousel">
                     <img src="./img/left.png" class="left-right-arrow" onclick="onLeftShift()">
                     <div id="carousel-dot">
@@ -86,86 +85,199 @@
                     </div>
                     <img src="./img/right.png" class="left-right-arrow" onclick="onRightShift()">
                 </div>
-                <br />
+                <div class="two-unit-gap"></div>
                 <div class="description" id="reward-des"> 10 Days Audio Room <br />theme + Profile Frame</div>
             </div>
-            <br />
+            <div id="remove-scheule-banner">
+                <div class="two-unit-gap"></div>
 
-            <!---------- action banner ---------->
-            <div class="action">
-                <img onclick="setRound1('schedule')" src="./img/Round 1 Select.png" class="round1-round2-btn"
-                    id="schedule-round1-btn">
-                <img onclick="setRound2('schedule')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
-                    id="schedule-round2-btn">
-            </div>
+                <!---------- action banner ---------->
+                <div class="action">
+                    <img onclick="setRound1('schedule')" src="./img/Round 1 Select.png" class="round1-round2-btn"
+                        id="schedule-round1-btn">
+                    <img onclick="setRound2('schedule')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
+                        id="schedule-round2-btn">
+                </div>
 
-            <!-------- category strip -------->
-            <div id="category-strip">
-                <img src="./img/Dance Button.png" onclick="selectCategory('dance')" id="dance">
-                <img src="./img/Singer Unselect Button.png" onclick="selectCategory('singer')" id="singer">
-                <img src="./img/Fashion Unselect Button.png" onclick="selectCategory('fashion')" id="fashion">
-            </div>
-            <br /><br />
+                <!-------- category strip -------->
+                <div id="category-strip">
+                    <img src="./img/Dance Button.png" onclick="selectCategory('dance')" id="dance">
+                    <img src="./img/Singer Unselect Button.png" onclick="selectCategory('singer')" id="singer">
+                    <img src="./img/Fashion Unselect Button.png" onclick="selectCategory('fashion')" id="fashion">
+                </div>
+                <div class="ten-unit-gap"></div>
 
-            <!------- schedule banner ------->
-            <div class="banner" id="schdeule-banner">
-                <img src="./img/Schedule Name Bg.png" class="banner-title">
-                <div id="schedule-table">
-                    <div id="table-heading">
-                        <div>Date</div>
-                        <div>Talent</div>
-                        <img src="./img/VS Unit.png">
-                        <div>Talent</div>
-                        <div>Date</div>
+                <!------- schedule banner ------->
+                <div class="banner" id="schdeule-banner">
+                    <img src="./img/Schedule Name Bg.png" class="banner-title">
+                    <div id="dancers">
+                        <div id="schedule-table">
+                            <div id="table-heading">
+                                <div>Date</div>
+                                <div>Talent</div>
+                                <img src="./img/VS Unit.png">
+                                <div>Talent</div>
+                                <div>Date</div>
+                            </div>
+                            <div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div id="table-data">
-                            <div>Date</div>
-                            <div>Name<br />Id:00000000</div>
-                            <img src="./img/VS Unit.png">
-                            <div>Name<br />Id:00000000</div>
-                            <div>Time</div>
+                    <div id="singers">
+                        <div id="schedule-table">
+                            <div id="table-heading">
+                                <div>Date</div>
+                                <div>Talent</div>
+                                <img src="./img/VS Unit.png">
+                                <div>Talent</div>
+                                <div>Date</div>
+                            </div>
+                            <div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="table-data">
-                            <div>Date</div>
-                            <div>Name<br />Id:00000000</div>
-                            <img src="./img/VS Unit.png">
-                            <div>Name<br />Id:00000000</div>
-                            <div>Time</div>
-                        </div>
-                        <div id="table-data">
-                            <div>Date</div>
-                            <div>Name<br />Id:00000000</div>
-                            <img src="./img/VS Unit.png">
-                            <div>Name<br />Id:00000000</div>
-                            <div>Time</div>
-                        </div>
-                        <div id="table-data">
-                            <div>Date</div>
-                            <div>Name<br />Id:00000000</div>
-                            <img src="./img/VS Unit.png">
-                            <div>Name<br />Id:00000000</div>
-                            <div>Time</div>
-                        </div>
-                        <div id="table-data">
-                            <div>Date</div>
-                            <div>Name<br />Id:00000000</div>
-                            <img src="./img/VS Unit.png">
-                            <div>Name<br />Id:00000000</div>
-                            <div>Time</div>
-                        </div>
-                        <div id="table-data">
-                            <div>Date</div>
-                            <div>Name<br />Id:00000000</div>
-                            <img src="./img/VS Unit.png">
-                            <div>Name<br />Id:00000000</div>
-                            <div>Time</div>
+                    </div>
+                    <div id="fashions">
+                        <div id="schedule-table">
+                            <div id="table-heading">
+                                <div>Date</div>
+                                <div>Talent</div>
+                                <img src="./img/VS Unit.png">
+                                <div>Talent</div>
+                                <div>Date</div>
+                            </div>
+                            <div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>Date</div>
+                                    <div>Name<br />Id:00000000</div>
+                                    <img src="./img/VS Unit.png">
+                                    <div>Name<br />Id:00000000</div>
+                                    <div>Time</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <br /><br />
-
+            <div class="ten-unit-gap"></div>
             <!---------- action banner ---------->
             <div class="action">
                 <img onclick="setUserMode('leaderboard')" src="./img/User Button UnSelect.png" class="user-talent-btn"
@@ -177,7 +289,7 @@
                 <img onclick="setRound2('leaderboard')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
                     id="leaderboard-round2-btn">
             </div>
-            <br /><br />
+            <div class="ten-unit-gap"></div>
 
             <!------ leaderboard banner -------->
             <div class="banner" id="leaderboard-banner">
