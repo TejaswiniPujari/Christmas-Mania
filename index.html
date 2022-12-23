@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body id="body">
@@ -44,44 +44,44 @@
         </div>
     </div>
     <div id="main">
-        <img src="./img/Guide Button.png" id="guid-btn">
+        <img src="./img/Guide-Button.png" id="guid-btn">
 
         <!----------- header img ------------->
-        <img src='./img/Christmas Mania Header Design.png' style="width: 100vw;">
+        <img src='./img/Christmas-Mania-Header-Design.png' style="width: 100vw;">
 
         <div style="padding: 0 3vw;">
 
             <!---------- action banner ---------->
             <div class="two-unit-gap"></div>
             <div class="action">
-                <img onclick="setUserMode('reward')" src="./img/User Button UnSelect.png" class="user-talent-btn"
-                    id="reward-user">
-                <img onclick="setTalentMode('reward')" src="./img/Talent Button Select.png" class="user-talent-btn"
-                    id="reward-talent">
-                <img onclick="setRound1('reward')" src="./img/Round 1 Select.png" class="round1-round2-btn"
-                    id="reward-round1-btn">
-                <img onclick="setRound2('reward')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
-                    id="reward-round2-btn">
+                <button onclick="setUserMode('reward')"><img src="./img/User-Button-UnSelect.png"
+                        class="user-talent-btn" id="reward-user"></button>
+                <button onclick="setTalentMode('reward')"><img src="./img/Talent-Button-Select.png"
+                        class="user-talent-btn" id="reward-talent"></button>
+                <button onclick="setRound1('reward')"><img src="./img/Round-1-Select.png" class="round1-round2-btn"
+                        id="reward-round1-btn"></button>
+                <button onclick="setRound2('reward')"><img src="./img/Round-2-UnSelect.png" class="round1-round2-btn"
+                        id="reward-round2-btn"></button>
             </div>
             <div class="ten-unit-gap"></div>
             <!----------- reward banner ------------>
             <div class="banner" id="reward-banner">
-                <img src="./img/Rewards Name Bg.png" class="banner-title">
+                <img src="./img/Rewards-Name-Bg.png" class="banner-title">
                 <div id="rewards">
-                    <img src="./img/Glass Show rewards copy.png">
-                    <img src="./img/Profile Frame.png">
+                    <img src="./img/Glass-Show-rewards-copy.png">
+                    <img src="./img/Profile-Frame.png">
                 </div>
                 <div id="user-rewards">
-                    <img src="./img/Beans 1 Users-min.png" id="user-rewards-img">
+                    <img src="./img/Beans-1-Users-min.png" id="user-rewards-img">
                 </div>
                 <div class="two-unit-gap"></div>
                 <div class="carousel">
                     <img src="./img/left.png" class="left-right-arrow" onclick="onLeftShift()">
                     <div id="carousel-dot">
-                        <img src="./img/Leaderboard rect-min.png" class="dot active">
-                        <img src="./img/Leaderboard rect-min.png" class="dot">
-                        <img src="./img/Leaderboard rect-min.png" class="dot">
-                        <img src="./img/Leaderboard rect-min.png" class="dot" id="last-dot">
+                        <img src="./img/Leaderboard-rect-min.png" class="dot active">
+                        <img src="./img/Leaderboard-rect-min.png" class="dot">
+                        <img src="./img/Leaderboard-rect-min.png" class="dot">
+                        <img src="./img/Leaderboard-rect-min.png" class="dot" id="last-dot">
                     </div>
                     <img src="./img/right.png" class="left-right-arrow" onclick="onRightShift()">
                 </div>
@@ -93,75 +93,81 @@
 
                 <!---------- action banner ---------->
                 <div class="action">
-                    <img onclick="setRound1('schedule')" src="./img/Round 1 Select.png" class="round1-round2-btn"
-                        id="schedule-round1-btn">
-                    <img onclick="setRound2('schedule')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
-                        id="schedule-round2-btn">
+                    <button><img onclick="setRound1('schedule')" src="./img/Round-1-Select.png"
+                            class="round1-round2-btn" id="schedule-round1-btn"></button>
+                    <button><img onclick="setRound2('schedule')" src="./img/Round-2-UnSelect.png"
+                            class="round1-round2-btn" id="schedule-round2-btn"></button>
                 </div>
 
                 <!-------- category strip -------->
                 <div id="category-strip">
-                    <img src="./img/Dance Button.png" onclick="selectCategory('dance')" id="dance">
-                    <img src="./img/Singer Unselect Button.png" onclick="selectCategory('singer')" id="singer">
-                    <img src="./img/Fashion Unselect Button.png" onclick="selectCategory('fashion')" id="fashion">
+                    <img src="./img/Dance-Button.png" onclick="selectCategory('dance')" id="dance">
+                    <img src="./img/Singer-Unselect-Button.png" onclick="selectCategory('singer')" id="singer">
+                    <img src="./img/Fashion-Unselect-Button.png" onclick="selectCategory('fashion')" id="fashion">
                 </div>
                 <div class="ten-unit-gap"></div>
 
                 <!------- schedule banner ------->
-                <div class="banner" id="schdeule-banner">
-                    <img src="./img/Schedule Name Bg.png" class="banner-title">
+                <div class="banner">
+                    <img src="./img/Schedule-Name-Bg.png" class="banner-title">
                     <div id="dancers">
                         <div id="schedule-table">
                             <div id="table-heading">
                                 <div>Date</div>
-                                <div>Talent</div>
-                                <img src="./img/VS Unit.png">
-                                <div>Talent</div>
+                                <div>Talent1</div>
+                                <img src="./img/VS-Unit.png">
+                                <div>Talent2</div>
                                 <div>Date</div>
                             </div>
                             <div>
                                 <div id="table-data">
+                                    <div>23-12-2022</div>
+                                    <div>💃Dancer Mona 💃🎤<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=633450612">633450612</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>"🤩🤩 Mayra 🤩🤩 "<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=627080017">627080017</a></div>
+                                    <div>21:15-21:30 IST</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>23-12-2022</div>
+                                    <div>🦢₴᭄ꦿ Mᴏɴᴀ🇮🇳<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=614097927">614097927</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>JANU SA<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=584260474">584260474</a></div>
+                                    <div>21:30-21:45 IST</div>
+                                </div>
+                                <div id="table-data">
+                                    <div>23-12-2022</div>
+                                    <div>🐇🌲Sidra A🌲🐇<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=593776999">593776999</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>"❤RAI❤ "<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=623397140">623397140</a></div>
+                                    <div>21:45-22:00 IST</div>
+                                </div>
+                                <!-- <div id="table-data">
                                     <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
                                     <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
+                                    <div>10:20 AM</div>
                                 </div>
                                 <div id="table-data">
                                     <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
                                     <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
+                                    <div>10:20 AM</div>
                                 </div>
                                 <div id="table-data">
                                     <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
                                     <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
-                                </div>
-                                <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
-                                </div>
-                                <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
-                                </div>
-                                <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
-                                </div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
+                                    <div>10:20 AM</div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -170,52 +176,64 @@
                             <div id="table-heading">
                                 <div>Date</div>
                                 <div>Talent</div>
-                                <img src="./img/VS Unit.png">
+                                <img src="./img/VS-Unit.png">
                                 <div>Talent</div>
                                 <div>Date</div>
                             </div>
                             <div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>💞S᭄Divya~Singer 💞<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=633447348">633447348</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>mysticaleyes<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=632530397">632530397</a></div>
+                                    <div>22:00-22:15 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>꧁❤ bitty❤꧂<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=588904519">588904519</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>Devasurya1111<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=621711023">621711023</a></div>
+                                    <div>22:15-22:30 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>💞S᭄🕉️ᖴしᑌᎢᗴしᝪᐯᗴᖇ🕉️<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=625793134">625793134</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>𝄟≛⃝❤️𝓨aͥanͣuͫ𓆪ꪾ𝄟<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=627657914">627657914</a></div>
+                                    <div>22:30-22:45 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>Niharikabhau<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=625621954">625621954</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>Versatile_PNK🖤<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=619032055">619032055</a></div>
+                                    <div>22:45-23:00 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>BLUE EYES ✌️<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=605371677">605371677</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>🎤 ♏anish❤️❤️❤️❤️<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=563691634">563691634</a></div>
+                                    <div>23:00-23:!5 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>🔥uniquer 🔥<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=606693600">606693600</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>🇦 🇧 🇭 🇮 SINGER🥇<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=578911093">578911093</a></div>
+                                    <div>23:15-23:30 IST</div>
                                 </div>
                             </div>
                         </div>
@@ -225,53 +243,63 @@
                             <div id="table-heading">
                                 <div>Date</div>
                                 <div>Talent</div>
-                                <img src="./img/VS Unit.png">
+                                <img src="./img/VS-Unit.png">
                                 <div>Talent</div>
                                 <div>Date</div>
                             </div>
                             <div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>💞S᭄ꦿ nupur💝💓<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=631104396">631104396</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>Manu_Villain<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=619232026">619232026</a></div>
+                                    <div>20:00-20:15 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>Riya decent<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=623502821">623502821</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>⃝❥➳ℛ℮ᚻ𐌵➳❥<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=584275223">584275223</a></div>
+                                    <div>20:15-20:30 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>🥂᭄Evana<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=596157281">596157281</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>ross hp<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=599580243">599580243</a></div>
+                                    <div>20:30-20:45 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>❤️🎀AKEERA🎀❤️<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=559684988">559684988</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>Nasha🍻<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=602769693">602769693</a></div>
+                                    <div>20:45-21:00 IST</div>
                                 </div>
                                 <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
+                                    <div>23-12-2022</div>
+                                    <div>💞S᭄ꦿ™ara Aslam ❤️<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=597903766">597903766</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>ꌚ᭙ꪖT𝖍ꪗ 𝕻ꪮ𝕟ꪀŭ̈ᘔɀ<br />ID:<a
+                                            href="http://www.kktv1.com/m/?roomid=603020440">603020440</a></div>
+                                    <div>21:00-21:15 IST</div>
                                 </div>
-                                <div id="table-data">
-                                    <div>Date</div>
-                                    <div>Name<br />Id:00000000</div>
-                                    <img src="./img/VS Unit.png">
-                                    <div>Name<br />Id:00000000</div>
-                                    <div>Time</div>
-                                </div>
+                                <!-- <div id="table-data">
+                                    <div>23-12-2022</div>
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
+                                    <img src="./img/VS-Unit.png">
+                                    <div>Tejaswini<br />ID:<a href="http://www.kktv1.com/m/?roomid=629917077">629917077</a></div>
+                                    <div>20:00-20:15 IST</div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -280,119 +308,120 @@
             <div class="ten-unit-gap"></div>
             <!---------- action banner ---------->
             <div class="action">
-                <img onclick="setUserMode('leaderboard')" src="./img/User Button UnSelect.png" class="user-talent-btn"
-                    id="leaderboard-user">
-                <img onclick="setTalentMode('leaderboard')" src="./img/Talent Button Select.png" class="user-talent-btn"
-                    id="leaderboard-talent">
-                <img onclick="setRound1('leaderboard')" src="./img/Round 1 Select.png" class="round1-round2-btn"
-                    id="leaderboard-round1-btn">
-                <img onclick="setRound2('leaderboard')" src="./img/Round 2 UnSelect.png" class="round1-round2-btn"
-                    id="leaderboard-round2-btn">
+                <button>
+                    <img onclick="setUserMode('leaderboard')" src="./img/User-Button-UnSelect.png"
+                        class="user-talent-btn" id="leaderboard-user"></button>
+                <button><img onclick="setTalentMode('leaderboard')" src="./img/Talent-Button-Select.png"
+                        class="user-talent-btn" id="leaderboard-talent"></button>
+                <button><img onclick="setRound1('leaderboard')" src="./img/Round-1-Select.png" class="round1-round2-btn"
+                        id="leaderboard-round1-btn"></button>
+                <button><img onclick="setRound2('leaderboard')" src="./img/Round-2-UnSelect.png"
+                        class="round1-round2-btn" id="leaderboard-round2-btn"></button>
             </div>
             <div class="ten-unit-gap"></div>
 
             <!------ leaderboard banner -------->
             <div class="banner" id="leaderboard-banner">
-                <img src="./img/Leaderboard Button.png" class="banner-title">
+                <img src="./img/Leaderboard-Button.png" class="banner-title">
                 <div class="winner-list-top3" style="margin-top: -9vw;">
                     <div id="profile-img-bg">
-                        <img src="./img/Bronze Profile .png" id="profile-img">
+                        <img src="./img/Bronze-Profile.png" id="profile-img">
                     </div>
                     <div>
-                        Name <br />Id:00000000
+                        Tejaswini <br />Id:00000000
                     </div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
-                        <img src="./img/Snow flakes.png" id="flower">
+                        <img src="./img/Snow-flakes.png" id="flower">
                     </div>
                 </div>
                 <div class="winner-list-top3">
                     <div id="profile-img-bg">
-                        <img src="./img/Bronze Profile .png" id="profile-img">
+                        <img src="./img/Bronze-Profile.png" id="profile-img">
                     </div>
                     <div>
-                        Name <br />Id:00000000
+                        Tejaswini <br />Id:00000000
                     </div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
-                        <img src="./img/Snow flakes.png" id="flower">
+                        <img src="./img/Snow-flakes.png" id="flower">
                     </div>
                 </div>
                 <div class="winner-list-top3">
                     <div id="profile-img-bg">
-                        <img src="./img/Bronze Profile .png" id="profile-img">
+                        <img src="./img/Bronze-Profile.png" id="profile-img">
                     </div>
                     <div>
-                        Name <br />Id:00000000
+                        Tejaswini <br />Id:00000000
                     </div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
-                        <img src="./img/Snow flakes.png" id="flower">
+                        <img src="./img/Snow-flakes.png" id="flower">
                     </div>
                 </div>
                 <div class="winner-list">
-                    <img src="./img/4 .png" class="number-img">
+                    <img src="./img/4.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
                 <div class="winner-list">
                     <img src="./img/5.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
                 <div class="winner-list">
                     <img src="./img/6.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
                 <div class="winner-list">
                     <img src="./img/7.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
                 <div class="winner-list">
                     <img src="./img/8.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
                 <div class="winner-list">
                     <img src="./img/9.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
                 <div class="winner-list">
                     <img src="./img/10.png" class="number-img">
                     <div class="empty-profile"></div>
-                    <div style="text-align: start;"> Name <br />Id:00000000</div>
+                    <div style="text-align: start;"> Tejaswini <br />Id:00000000</div>
                     <div id="last-col">
-                        <img src="./img/Beans .png" id="beans">
+                        <img src="./img/Beans.png" id="beans">
                         000,000,00
                     </div>
                 </div>
