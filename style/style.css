@@ -1,0 +1,383 @@
+body {
+    height: 100%;
+    background-image: url(../img/Christmas-Mania-Blue-Background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    overflow: hidden;
+}
+
+.ten-unit-gap {
+    height: 10vw;
+}
+
+.two-unit-gap {
+    height: 2vw;
+}
+
+#guid-btn {
+    position: absolute;
+    top: 75vw;
+    height: 10vw;
+    right: 0;
+}
+
+/*------- modal -----------*/
+#modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+#show-modal {
+    display: none;
+}
+
+#close-btn {
+    position: relative;
+    left: 85vw;
+    margin-top: 5vw;
+}
+
+#close-btn img {
+    height: 10vw;
+}
+
+#guidline {
+    background-image: url('../img/guidline-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 90vh;
+    display: grid;
+    margin: 1vh;
+    align-content: center;
+    padding: 1vw;
+}
+
+#guid-tag img {
+    height: 8vw;
+}
+
+#guid-tag {
+    margin-bottom: 2vw;
+}
+
+#guidline ul {
+    transform: scale(0.9);
+    font-size: 4vw;
+    overflow: scroll;
+    height: 50vh;
+    text-align: start;
+    position: relative;
+    top: -5vw;
+    margin: 0;
+}
+
+/* all action tab */
+.action {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.user-talent-btn {
+    height: 17vw;
+}
+
+.round1-round2-btn {
+    height: 15vw;
+}
+
+/* banner */
+.banner {
+    background-image: url(../img/Rewards-Frame-Bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.description {
+    font-size: 6vw;
+    color: white;
+    width: 89%;
+    margin: 0vw auto;
+}
+
+.banner-title {
+    height: 20vw;
+    position: relative;
+    top: -10vw;
+}
+
+/* reward banner */
+#rewards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-top: -10vw;
+}
+
+#criteria-text {
+    position: relative;
+    top: -10vw;
+}
+
+#reward-banner {
+    height: 100vw;
+}
+
+#rewards img {
+    height: 45vw;
+}
+
+#user-rewards {
+    margin-top: -5vw;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#user-rewards img {
+    height: 35vw;
+}
+
+.left-right-arrow {
+    height: 8vw;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 10% 70% 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#carousel-dot {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 2vw;
+    width: 3vw;
+    padding: 1vw;
+    border-radius: 10vw;
+}
+
+.active {
+    width: 10vw;
+}
+
+/* category */
+#category-strip {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#category-strip img {
+    height: 10vw;
+}
+
+/* schedule banner table */
+
+#dancers-round1 {
+    display: none;
+}
+
+#singers-round1 {
+    display: none;
+}
+
+#round2-schedule {
+    display: none;
+}
+
+#dancers-round2 {
+    display: none;
+}
+
+#singers-round2 {
+    display: none;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+#talent-reward-title {
+    font-size: 5vw;
+    padding: 5vw;
+}
+
+#reward-table {
+    position: relative;
+    top: -8vw;
+}
+
+#table-heading {
+    display: grid;
+    grid-template-columns: 15% 30% auto 30% 15%;
+    font-size: 6vw;
+    color: white;
+    margin: 3vw 2vw 1.5vw;
+    padding: 1vw;
+    background-color: #00008b80;
+    border-radius: 2vw;
+    align-items: center;
+    justify-items: center;
+}
+
+#table-heading img {
+    height: 8vw;
+}
+
+#table-data {
+    display: grid;
+    grid-template-columns: 12% 35% auto 35% 12%;
+    font-size: 2.8vw;
+    margin: 1.5vw 2vw;
+    background-image: url(../img/Schedule-Talent-Name-BG.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-items: center;
+    padding: 1vw;
+    font-weight: bold;
+    color: #001058;
+    margin-top: 2vw;
+}
+
+#table-data img {
+    height: 5vw;
+}
+
+#schedule-table {
+    position: relative;
+    top: -13vw;
+    padding: 0 1.5vw;
+}
+
+/* leaderboard banner */
+#beans {
+    height: 4vw;
+    margin-right: 1vw;
+}
+
+#last-col {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#profile-img {
+    height: 18vw;
+    margin-left: -3vw;
+    position: relative;
+    top: -1vw;
+    left: 1.5vw;
+}
+
+.winner-list-top3 {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    align-items: center;
+    background-image: url(../img/Leaderboard-Talent-Name-Bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80vw;
+    height: 11vw;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 10vw;
+    padding-left: 2vw;
+}
+
+#flower {
+    height: 8vw;
+    position: relative;
+    top: -6vw;
+    right: 3vw;
+}
+
+#profile-img-bg {
+    background-color: black;
+    border-radius: 50vw;
+    margin: vw;
+    height: 15vw;
+    padding: -10px;
+    position: relative;
+    left: -2vw;
+    transform: scale(1.1);
+}
+
+.winner-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-image: url(../img/leaderboard-name-Bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    color: darkblue;
+    font-size: 4vw;
+    justify-items: center;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 0.5vw;
+    margin-bottom: 2vw;
+}
+
+.number-img {
+    height: 6vw;
+}
+
+#leaderboard-banner {
+    height: 180vw;
+}
+
+.empty-profile {
+    background-color: darkblue;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+/* footer */
+#footer {
+    padding: 0vw 0 5vw;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+}
+
+a {
+    color: #00125a;
+    text-decoration: none;
+}
